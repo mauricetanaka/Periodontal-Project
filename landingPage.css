@@ -1,0 +1,1468 @@
+/* ========================= Stats Section Styles ========================= */
+.text-wrapper-6 {
+    width: 80%;
+    max-width: 1138px; /* Match hero section max-width */
+    margin: 4vw auto 2vw;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 2.5vw;
+    max-font-size: 32px;
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-align: left;
+  }
+  
+  .stats {
+    width: 80%;
+    max-width: 1138px; /* Match hero section max-width */
+    margin: 0 auto;
+    aspect-ratio: 21/9; /* More compact aspect ratio */
+    border-radius: 1.5vw;
+    overflow: hidden;
+    background-image: url(./assets/img/stats.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .content-usp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 2vw;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 2vw;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(33px) brightness(100%);
+    -webkit-backdrop-filter: blur(33px) brightness(100%);
+    transition: all 0.3s ease;
+  }
+  
+  .frame {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 3vw;
+  }
+  
+  .frame-2,
+  .frame-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vw;
+    padding: 1.5vw;
+    border-radius: 1vw;
+    transition: all 0.3s ease;
+  }
+  
+  /* Cool hover effects */
+  .frame-2:hover,
+  .frame-3:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 1vw;
+  }
+  
+  .heading {
+    font-family: "PT Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 3vw;
+    max-font-size: 45px;
+    letter-spacing: 0;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+  }
+  
+  .heading-2 {
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 1vw;
+    max-font-size: 14px;
+    letter-spacing: 0;
+    line-height: 1.5;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for stats numbers */
+  .frame-2:hover .heading,
+  .frame-3:hover .heading {
+    color: #ffd700;
+    transform: scale(1.1);
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  }
+  
+  .line-2 {
+    width: 80%; /* Match hero section width */
+    max-width: 1138px;
+    height: 2px;
+    margin: 3vw auto;
+    display: block;
+  }
+  
+  /* Media Queries for ststs section responsiveness */
+  @media (max-width: 1200px) {
+    .text-wrapper-6 {
+      font-size: 3.5vw;
+      margin: 5vw auto 3vw;
+      width: 90%;
+    }
+  
+    .stats {
+      width: 90%;
+      aspect-ratio: 16/9;
+    }
+  
+    .content-usp {
+      width: 80%;
+      padding: 3vw;
+    }
+  
+    .heading {
+      font-size: 4vw;
+    }
+  
+    .heading-2 {
+      font-size: 1.4vw;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .text-wrapper-6 {
+      font-size: 5vw;
+      text-align: center;
+      margin: 6vw auto 4vw;
+      width: 95%;
+    }
+  
+    .stats {
+      width: 95%;
+      aspect-ratio: 3/4;
+    }
+  
+    .content-usp {
+      width: 90%;
+      padding: 4vw 2vw;
+    }
+  
+    .frame {
+      flex-direction: column;
+      gap: 4vw;
+    }
+  
+    .frame-2,
+    .frame-3 {
+      width: 100%;
+      padding: 3vw;
+    }
+  
+    .heading {
+      font-size: 7vw;
+    }
+  
+    .heading-2 {
+      font-size: 2.5vw;
+    }
+  
+    /* Adjust hover effects for touch devices */
+    .frame-2:hover,
+    .frame-3:hover {
+      transform: scale(1.02);
+    }
+  
+    .line-2 {
+      width: 95%;
+      margin: 4vw auto;
+    }
+  }
+
+
+ /* ========================= Team Styles Section ========================= */
+.text-wrapper-7 {
+    width: 90%;
+    max-width: 345px;
+    margin: 5vw auto 3vw;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.final-team {
+    width: 90%;
+    max-width: 1138px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: clamp(1rem, 2vw, 2rem);
+    flex-wrap: wrap;
+    padding: 2vw 0;
+}
+
+/* Team Member Card Styles */
+.dr-SP, .dr-debbie, .dr-raecene {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    aspect-ratio: 360/530;
+    background-color: #2a2a2a;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card content styles */
+.overlap-group, .overlap, .overlap-2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: clamp(1rem, 2vw, 2rem);
+}
+
+/* Team member names */
+.text-wrapper-8, .text-wrapper-10, .text-wrapper-12 {
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: clamp(1.25rem, 3vw, 2rem);
+    text-align: center;
+    margin-bottom: clamp(0.5rem, 1vw, 1rem);
+    z-index: 1;
+}
+
+/* Team member roles */
+.text-wrapper-9, .text-wrapper-11, .text-wrapper-13 {
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: clamp(0.875rem, 2vw, 1.25rem);
+    text-align: center;
+    margin-bottom: clamp(1rem, 2vw, 2rem);
+    z-index: 1;
+}
+
+/* Learn More Button Styles */
+.a-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 4vw auto;
+    padding: 1rem 2rem;
+    background-color: #2a2a2a;
+    border-radius: 42px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.a-3:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: #3a3a3a;
+}
+
+.a-3:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.span-3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.a-3:hover .span-after-2 {
+    transform: translateX(5px);
+}
+
+.text-wrapper-14 {
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .dr-SP, .dr-debbie, .dr-raecene {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 992px) {
+    .dr-SP, .dr-debbie, .dr-raecene {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .final-team {
+        gap: 2rem;
+    }
+
+    .dr-SP, .dr-debbie, .dr-raecene {
+        max-width: 280px;
+        aspect-ratio: 3/4;
+    }
+}
+
+@media (max-width: 576px) {
+    .final-team {
+        gap: 1.5rem;
+    }
+
+    .dr-SP, .dr-debbie, .dr-raecene {
+        max-width: 100%;
+        aspect-ratio: 3/4;
+    }
+
+    .overlap-group, .overlap, .overlap-2 {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .text-wrapper-7 {
+        margin: 2rem auto 1.5rem;
+    }
+
+    .dr-SP, .dr-debbie, .dr-raecene {
+        aspect-ratio: 2/3;
+    }
+
+    .a-3 {
+        margin: 1.5rem auto;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+/* ========================= Base styles for the services section ========================= */
+.text-wrapper-15 {
+    width: 100%;
+    max-width: 411px;
+    margin: 2rem auto;
+    color: #000000;
+    font-size: clamp(28px, 4vw, 40px);
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    text-align: center;
+}
+
+.final-services {
+    width: 90%;
+    max-width: 1138px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+/* Common styles for service cards */
+.final-services .periodontics,
+.final-services .surgical,
+.final-services .oral-medicine {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    height: 316px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #00000099;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.final-services .periodontics {
+    background-image: url(./assets/img/periodontics.png);
+}
+
+.final-services .surgical {
+    background-image: url(./assets/img/surgical.png);
+}
+
+.final-services .oral-medicine {
+    background-image: url(./assets/img/oral-medicine.png);
+}
+
+/* Hover effects for service cards */
+.periodontics:hover,
+.surgical:hover,
+.oral-medicine:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Text styles for service cards */
+.final-services [class^="text-wrapper-"] {
+    color: #ffffff;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* Titles in service cards */
+.final-services .text-wrapper-17,
+.final-services .text-wrapper-18,
+.final-services .text-wrapper-20 {
+    position: relative;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    font-size: clamp(20px, 2.5vw, 24px);
+    margin-top: 2rem;
+    opacity: 0.9;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Description text in service cards */
+.final-services .text-wrapper-16,
+.final-services .text-wrapper-19,
+.final-services .text-wrapper-21 {
+    position: relative;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: clamp(14px, 1.5vw, 16px);
+    line-height: 1.6;
+    margin-top: 1rem;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover effects for text */
+.final-services [class^="periodontics"]:hover [class^="text-wrapper-"],
+.final-services [class^="surgical"]:hover [class^="text-wrapper-"],
+.final-services [class^="oral-medicine"]:hover [class^="text-wrapper-"] {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+/* Learn More Button Styles */
+.a-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 4vw auto;
+    padding: 1rem 2rem;
+    background-color: #2a2a2a;
+    border-radius: 42px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.a-4:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: #3a3a3a;
+}
+
+.a-4:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.span-3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.a-4:hover .span-after-2 {
+    transform: translateX(5px);
+}
+
+
+/* Divider line */
+.line-4 {
+    width: 90%;
+    max-width: 1038px;
+    height: 2px;
+    margin: 2rem auto;
+    display: block;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .final-services {
+        gap: 1rem;
+    }
+    
+    .periodontics,
+    .surgical,
+    .oral-medicine {
+        height: 280px;
+    }
+    .a-4 {
+        padding: 0.8rem 1.6rem;
+        margin: 6vw auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .final-services .periodontics,
+    .final-services .surgical,
+    .final-services .oral-medicine {
+        height: 250px;
+    }
+    
+    .final-services [class^="text-wrapper-"] {
+        padding: 0 0.5rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .final-services .text-wrapper-17,
+    .final-services .text-wrapper-18,
+    .final-services .text-wrapper-20 {
+      font-size: 22px;
+    }
+  
+    .final-services .text-wrapper-16,
+    .final-services .text-wrapper-19,
+    .final-services .text-wrapper-21 {
+      font-size: 15px;
+    }
+  
+    .text-wrapper-15 {
+      font-size: 36px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .final-services .text-wrapper-17,
+    .final-services .text-wrapper-18,
+    .final-services .text-wrapper-20 {
+      font-size: 20px;
+    }
+  
+    .final-services .text-wrapper-16,
+    .final-services .text-wrapper-19,
+    .landing-page .text-wrapper-21 {
+      font-size: 14px;
+    }
+  
+    .text-wrapper-15 {
+      font-size: 32px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .final-services .text-wrapper-17,
+    .final-services .text-wrapper-18,
+    .final-services .text-wrapper-20 {
+      font-size: 18px;
+    }
+  
+    .final-services .text-wrapper-16,
+    .final-services .text-wrapper-19,
+    .final-services .text-wrapper-21 {
+      font-size: 13px;
+    }
+  
+    .text-wrapper-15 {
+      font-size: 28px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .final-services .text-wrapper-17,
+    .final-services .text-wrapper-18,
+    .final-services .text-wrapper-20 {
+      font-size: 16px;
+    }
+  
+    .final-services .text-wrapper-16,
+    .final-services .text-wrapper-19,
+    .landing-page .text-wrapper-21 {
+      font-size: 12px;
+    }
+  
+    .text-wrapper-15 {
+      font-size: 24px;
+    }
+  
+    .text-wrapper-14 {
+      font-size: 13px;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .final-services .text-wrapper-17,
+    .final-services .text-wrapper-18,
+    .final-services .text-wrapper-20 {
+      font-size: 14px;
+    }
+  
+    .final-services .text-wrapper-16,
+    .final-services .text-wrapper-19,
+    .final-services .text-wrapper-21 {
+      font-size: 11px;
+    }
+  
+    .text-wrapper-15 {
+      font-size: 20px;
+    }
+  
+    .text-wrapper-14 {
+      font-size: 12px;
+    }
+  }
+
+/* ========================= Testimonials Section Styles ========================= */
+
+.text-wrapper-22 {
+    position: absolute;
+    top: 3592px; /* Adjusted - will need to be responsive */
+    left: 10%; /* Adjusted for responsiveness */
+    right: 10%; /* Adjusted for responsiveness */
+    text-align: center; /* Center text on smaller screens */
+    font-family: var(--single-line-body-base-font-family);
+    font-weight: var(--single-line-body-base-font-weight);
+    color: #000000;
+    font-size: 1.5vw; /* Responsive font size */
+    max-font-size: 24px; /* Maximum font size */
+    letter-spacing: var(--single-line-body-base-letter-spacing);
+    line-height: var(--single-line-body-base-line-height);
+    white-space: nowrap; /* Keep text on one line if possible */
+    font-style: var(--single-line-body-base-font-style);
+    transform: translateX(-50%); /* Center horizontally */
+    left: 50%; /* Center horizontally */
+}
+
+.text-wrapper-23 {
+    position: relative; /* Changed to relative for better flow */
+    padding-top: 5vw; /* Spacing from the above section */
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Responsive width */
+    max-width: 1138px; /* Match hero section max-width */
+    text-align: center;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 3vw; /* Responsive font size */
+    max-font-size: 40px; /* Maximum font size */
+    letter-spacing: 0;
+    line-height: 1.2;
+}
+
+.tesimonials {
+    display: flex;
+    flex-direction: row; /* Default to row */
+    justify-content: center; /* Center testimonials */
+    width: 90%; /* Responsive width */
+    max-width: 1279px;
+    margin: 5vw auto; /* Center horizontally and add vertical margin */
+    gap: 2vw; /* Responsive gap */
+}
+
+.tesimonials .overlap-wrapper:hover {
+    transform: scale(1.05); /* Slight scale up on hover */
+}
+
+
+.tesimonials .overlap-group-2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #2a2a2a;
+    border-radius: 3vw; /* Responsive border-radius */
+    box-shadow: 0px 10px 40px #00000014;
+    padding: 2vw; /* Responsive padding inside the testimonial box */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space between text and author */
+}
+
+.tesimonials .text-wrapper-24 {
+    font-family: "Manrope-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 1vw; /* Responsive font size */
+    max-font-size: 16px; /* Maximum font size */
+    letter-spacing: 0.02vw; /* Responsive letter-spacing */
+    line-height: 1.6;
+    margin-bottom: 1.5vw; /* Spacing below text */
+}
+
+.tesimonials .group-2,
+.tesimonials .group-5,
+.tesimonials .group-7 {
+    display: flex;
+    align-items: center;
+    gap: 1vw; /* Responsive gap between image and text */
+}
+
+
+.tesimonials .ellipse,
+.tesimonials .ellipse-2 {
+    width: 4vw; /* Responsive image size */
+    max-width: 70px; /* Maximum image size */
+    height: 4vw; /* Responsive image size */
+    max-height: 70px; /* Maximum image size */
+    border-radius: 50%;
+}
+
+.tesimonials .text-wrapper-25,
+.tesimonials .text-wrapper-26 {
+    font-family: "Abel-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 1.5vw; /* Responsive font size */
+    max-font-size: 24px; /* Maximum font size */
+    letter-spacing: 0.03vw; /* Responsive letter-spacing */
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+.tesimonials .group-4 {
+    display: flex;
+    gap: 0.2vw; /* Responsive gap between stars */
+}
+
+.tesimonials .star,
+.tesimonials .star-2,
+.tesimonials .star-3,
+.tesimonials .star-4,
+.tesimonials .star-5 {
+    width: 1vw; /* Responsive star size */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 18px; /* Maximum star size */
+}
+
+
+.line-5 {
+    width: 80%; /* Responsive width */
+    max-width: 1038px;
+    height: 2px;
+    margin: 5vw auto; /* Center horizontally and add vertical margin */
+    display: block;
+}
+
+
+/* Media Queries for Testimonials Section Responsiveness */
+@media (max-width: 1200px) {
+    .text-wrapper-22 {
+        font-size: 2vw;
+    }
+    .text-wrapper-23 {
+        font-size: 4vw;
+    }
+    .tesimonials .text-wrapper-24 {
+        font-size: 1.2vw;
+    }
+    .tesimonials .text-wrapper-25,
+    .tesimonials .text-wrapper-26 {
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .tesimonials .text-wrapper-22 {
+        font-size: 2.5vw;
+        white-space: normal; /* Allow text to wrap on smaller screens */
+    }
+    .tesimonials .text-wrapper-23 {
+        font-size: 5vw;
+    }
+    .tesimonials {
+        flex-direction: column; /* Stack testimonials on smaller screens */
+        align-items: center; /* Center items in column layout */
+        gap: 5vw;
+    }
+    .tesimonials .group {
+        max-width: 95%; /* Testimonial cards take more width on smaller screens */
+        aspect-ratio: 16/9; /* Adjust aspect ratio for smaller screens */
+    }
+    .tesimonials .text-wrapper-24 {
+        font-size: 1.4vw;
+    }
+    .tesimonials .text-wrapper-25,
+    .tesimonials .text-wrapper-26 {
+        font-size: 2.2vw;
+    }
+    .tesimonials .ellipse,
+    .tesimonials .ellipse-2 {
+        width: 8vw;
+        height: 8vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-wrapper-22 {
+        font-size: 3vw;
+    }
+    .text-wrapper-23 {
+        font-size: 6vw;
+    }
+    .tesimonials .text-wrapper-24 {
+        font-size: 1.6vw;
+    }
+    .tesimonials .text-wrapper-25,
+    .tesimonials .text-wrapper-26 {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 320px) {
+    .text-wrapper-22 {
+        font-size: 3.5vw;
+    }
+    .text-wrapper-23 {
+        font-size: 7vw;
+    }
+    .tesimonials .text-wrapper-24 {
+        font-size: 1.8vw;
+    }
+    .tesimonials .text-wrapper-25,
+    .tesimonials .text-wrapper-26 {
+        font-size: 2.8vw;
+    }
+}
+
+/* ========================= Periodontist Word Section Styles ========================= */
+.text-wrapper-27 {
+    position: relative;
+    width: 80%; /* Match hero section width */
+    max-width: 1138px; /* Match hero section max-width */
+    margin: 5vw auto 2vw;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 2.77vw; /* Responsive font size */
+    max-font-size: 40px; /* Maximum font size */
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.drsp-word {
+    position: relative;
+    width: 80%; /* Match hero section width */
+    max-width: 1138px; /* Match hero section max-width */
+    aspect-ratio: 1138 / 480; /* Original ratio */
+    margin: 2vw auto;
+    background-image: url(./assets/img/drsp-word.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.drsp-word .our-practice-is {
+    position: absolute;
+    width: 61.4%; /* Percentage of drsp-word width */
+    top: 35%;    /* Percentage of drsp-word height */
+    left: 19.2%;   /* Percentage of drsp-word width */
+    font-family: "Poppins-Italic", Helvetica;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 2vw; /* Responsive font size */
+    max-font-size: 32px; /* Maximum font size */
+    text-align: center;
+    font-size: 2.22vw; /* Responsive font size */
+    letter-spacing: 0;
+    line-height: 1.2;
+}
+
+.text-wrapper-28 {
+    position: relative;
+    width: 80%; /* Match hero section width */
+    max-width: 1138px; /* Match hero section max-width */
+    margin: 3vw auto;
+    text-align: center;
+    font-family: var(--single-line-body-base-font-family);
+    font-weight: var(--single-line-body-base-font-weight);
+    color: #000000;
+    font-size: 1.66vw; /* Responsive font size */
+    max-font-size: 24px; /* Maximum font size */
+    letter-spacing: var(--single-line-body-base-letter-spacing);
+    line-height: var(--single-line-body-base-line-height);
+    white-space: normal; /* Allow text to wrap */
+    font-style: var(--single-line-body-base-font-style);
+}
+
+.line-6 {
+    position: relative;
+    width: 80%; /* Match hero section width */
+    max-width: 1038px; /* Match hero section max-width */
+    height: 2px;
+    margin: 3vw auto;
+    object-fit: cover;
+}
+
+/* Media Queries for Periodontist Word Section Responsiveness */
+@media (max-width: 1200px) {
+    .text-wrapper-27 {
+        font-size: 3.5vw;
+    }
+    .drsp-word .our-practice-is {
+        font-size: 3vw;
+    }
+    .text-wrapper-28 {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-wrapper-27 {
+        font-size: 4.5vw;
+    }
+    .drsp-word .our-practice-is {
+        font-size: 4vw;
+    }
+    .text-wrapper-28 {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-wrapper-27 {
+        font-size: 5.5vw;
+    }
+    .drsp-word .our-practice-is {
+        font-size: 5vw;
+    }
+    .text-wrapper-28 {
+        font-size: 3vw;
+    }
+}
+
+/* ========================= Contact Section Styles ========================= */
+
+.text-wrapper-29 {
+  width: 100%;
+  max-width: 411px;
+  margin: 2rem auto;
+  color: #000000;
+  font-size: clamp(28px, 4vw, 40px);
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+.form-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.form-inner {
+  max-width: 929px;
+  margin: 0 auto;
+}
+
+.form-row {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+  }
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  position: absolute;
+  left: 0;
+  top: -1.5rem;
+  color: #666;
+  transition: color 0.3s;
+}
+
+.form-group:hover label {
+  color: #000;
+}
+
+.form-input {
+  width: 100%;
+  padding-bottom: 0.5rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #666;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus {
+  border-bottom-color: #000;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.subject-section {
+  margin-bottom: 2rem;
+}
+
+.subject-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.radio-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .radio-group {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.radio-custom {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #666;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s;
+}
+
+.radio-label:hover .radio-custom {
+  border-color: #000;
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-input:checked + .radio-custom::after {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  background: #000;
+  border-radius: 50%;
+}
+
+.message-input {
+  height: 8rem;
+  resize: none;
+}
+
+.submit-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #111;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background: #333;
+}
+
+.submit-button:hover svg {
+  transform: translateX(4px);
+}
+
+.submit-button svg {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.3s;
+}
+
+@media (max-width: 767px) {
+  .submit-button {
+      width: 100%;
+      justify-content: center;
+  }
+}
+
+/* ========================= FAQ Section Styles ========================= */
+
+.container-1 {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .container {
+      padding: 0 32px;
+  }
+}
+
+.border-line {
+  width: 100%;
+  border-top: 1px solid black;
+  margin: 32px 0;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 981px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 24px;
+}
+
+.faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq-header {
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-header.active {
+  background-color: #2a2a2a;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.faq-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-align: left;
+}
+
+.question {
+  font-size: 1.5rem;
+  line-height: 37.2px;
+  letter-spacing: 0.36px;
+  font-weight: 500;
+  color: #3b3131;
+}
+
+.faq-header.active .question {
+  color: white;
+}
+
+.toggle-icon {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #3b3131;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.3s;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.faq-header.active .toggle-icon {
+  border-color: white;
+  transform: rotate(45deg);
+}
+
+.toggle-icon::before,
+.toggle-icon::after {
+  content: '';
+  position: absolute;
+  background-color: #3b3131;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.faq-header.active .toggle-icon::before,
+.faq-header.active .toggle-icon::after {
+  background-color: white;
+}
+
+.toggle-icon::before {
+  width: 16px;
+  height: 2px;
+}
+
+.toggle-icon::after {
+  width: 2px;
+  height: 16px;
+}
+
+.answer-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.answer-container.active {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.answer {
+  padding: 0 24px 24px;
+  font-size: 1.25rem;
+  line-height: 31px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+}
+
+.faq-divider {
+  width: 100%;
+  border-bottom: 1px solid #3b3131;
+  margin-top: 8px;
+}
+
+/* ========================= Academy Styles ========================= */
+
+/* Academy Section Base Styles */
+.academy-section {
+  position: relative;
+  width: 90%;
+  max-width: 1280px;
+  margin: 5vw auto;
+  padding: 2vw;
+}
+
+.text-wrapper-45 {
+
+  width: 100%;
+  max-width: 411px;
+  margin: 2rem auto;
+  color: #000000;
+  font-size: clamp(28px, 4vw, 40px);
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  text-align: center;
+  font-size: 3vw;
+  max-font-size: 40px;
+  letter-spacing: 0;
+  line-height: 1.5;
+  margin-bottom: 3vw;
+  transition: color 0.3s ease;
+}
+
+.text-wrapper-45:hover {
+  color: #2a2a2a;
+  transform: scale(1.02);
+}
+
+.academy {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4vw;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw 0;
+}
+
+.steptodown {
+  width: 45%;
+  min-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1.5vw;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.steptodown:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.register-into-a {
+  width: 45%;
+  min-width: 300px;
+  font-family: "Poppins-Light", Helvetica;
+  font-size: 1.8vw;
+  max-font-size: 24px;
+  line-height: 1.8;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.register-into-a:hover {
+  transform: scale(1.02);
+}
+
+.text-wrapper-46 {
+  font-weight: 300;
+  background: linear-gradient(45deg, #2a2a2a, #666);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.text-wrapper-47 {
+  font-family: "Poppins-Regular", Helvetica;
+}
+
+.a-5 {
+  width: 151px;
+  height: 55px;
+  margin: 3vw auto;
+  background-color: #2a2a2a;
+  border-radius: 42px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px #00000040;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.a-5:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: #3a3a3a;
+}
+
+.overlap-group-4 {
+  position: relative;
+  width: 132px;
+  height: 24px;
+  margin: 14px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-wrapper-48 {
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.a-5:hover .text-wrapper-48 {
+  transform: scale(1.1);
+}
+
+.span-after-4 {
+  width: 20px;
+  height: 14px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.a-5:hover .span-after-4 {
+  transform: translateX(5px);
+}
+
+.line-13 {
+  width: 90%;
+  max-width: 1038px;
+  height: 2px;
+  margin: 4vw auto;
+  display: block;
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 1024px) {
+  .academy {
+    gap: 3vw;
+  }
+  
+  .steptodown {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .register-into-a {
+    width: 100%;
+    max-width: 600px;
+    font-size: 2.2vw;
+    margin-top: 2vw;
+  }
+  
+  .text-wrapper-45 {
+    font-size: 4vw;
+    text-align: center;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .academy-section {
+    width: 95%;
+    padding: 4vw;
+  }
+  
+  .text-wrapper-45 {
+    font-size: 6vw;
+    text-align: center;
+  }
+  
+  .register-into-a {
+    font-size: 3.5vw;
+    line-height: 1.6;
+  }
+  
+  .a-5 {
+    width: 80%;
+    max-width: 151px;
+    margin: 4vw auto;
+  }
+}
