@@ -1,17 +1,17 @@
 /* ========================= Stats Section Styles ========================= */
 .text-wrapper-6 {
-    width: 80%;
-    max-width: 1138px; /* Match hero section max-width */
-    margin: 4vw auto 2vw;
-    font-family: "Poppins-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 2.5vw;
-    max-font-size: 32px;
-    letter-spacing: 0;
-    line-height: 1.2;
-    text-align: left;
-  }
+   width: 80%;
+   max-width: 1138px; /* Match hero section max-width */
+   margin: 3vw auto 1.5vw; /* Reduced margin */
+   font-family: "Poppins-Regular", Helvetica;
+   font-weight: 400;
+   color: #000000;
+   font-size: 2vw; /* Reduced font-size */
+   /*max-font-size: 28px; /* Reduced max-font-size */
+   letter-spacing: 0;
+   line-height: 1.2;
+   text-align: left;
+ }
   
   .stats {
     width: 80%;
@@ -69,22 +69,22 @@
   }
   
   .heading {
-    font-family: "PT Sans-Regular", Helvetica;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 3vw;
-    max-font-size: 45px;
-    letter-spacing: 0;
-    line-height: 1.2;
-    transition: all 0.3s ease;
-  }
+     font-family: "PT Sans-Regular", Helvetica;
+     font-weight: 400;
+     color: #ffffff;
+     font-size: 2.5vw; /* Reduced font-size */
+     /*max-font-size: 36px; /* Reduced max-font-size */
+     letter-spacing: 0;
+     line-height: 1.2;
+     transition: all 0.3s ease;
+   }
   
   .heading-2 {
     font-family: "Poppins-Regular", Helvetica;
     font-weight: 400;
     color: #ffffff;
     font-size: 1vw;
-    max-font-size: 14px;
+    /*max-font-size: 14px;*/
     letter-spacing: 0;
     line-height: 1.5;
     text-align: center;
@@ -234,25 +234,25 @@
 
 /* Team member names */
 .text-wrapper-8, .text-wrapper-10, .text-wrapper-12 {
-    font-family: "Poppins-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: clamp(1.25rem, 3vw, 2rem);
-    text-align: center;
-    margin-bottom: clamp(0.5rem, 1vw, 1rem);
-    z-index: 1;
-}
+   font-family: "Poppins-Bold", Helvetica;
+   font-weight: 700;
+   color: #ffffff;
+   font-size: clamp(1rem, 2.5vw, 1.6rem); /* Reduced font-size */
+   text-align: center;
+   margin-bottom: clamp(0.4rem, 0.8vw, 0.8rem); /* Reduced margin-bottom */
+   z-index: 1;
+ }
 
 /* Team member roles */
 .text-wrapper-9, .text-wrapper-11, .text-wrapper-13 {
-    font-family: "Poppins-Regular", Helvetica;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: clamp(0.875rem, 2vw, 1.25rem);
-    text-align: center;
-    margin-bottom: clamp(1rem, 2vw, 2rem);
-    z-index: 1;
-}
+   font-family: "Poppins-Regular", Helvetica;
+   font-weight: 400;
+   color: #ffffff;
+   font-size: clamp(0.75rem, 1.5vw, 1rem); /* Reduced font-size */
+   text-align: center;
+   margin-bottom: clamp(0.8rem, 1.5vw, 1.5rem); /* Reduced margin-bottom */
+   z-index: 1;
+ }
 
 /* Learn More Button Styles */
 .a-3 {
@@ -358,15 +358,15 @@
 
 /* ========================= Base styles for the services section ========================= */
 .text-wrapper-15 {
-    width: 100%;
-    max-width: 411px;
-    margin: 2rem auto;
-    color: #000000;
-    font-size: clamp(28px, 4vw, 40px);
-    font-family: "Poppins-Regular", Helvetica;
-    font-weight: 400;
-    text-align: center;
-}
+   width: 100%;
+   max-width: 411px;
+   margin: 1.5rem auto; /* Reduced margin */
+   color: #000000;
+   font-size: clamp(24px, 3.5vw, 36px); /* Reduced font-size */
+   font-family: "Poppins-Regular", Helvetica;
+   font-weight: 400;
+   text-align: center;
+ }
 
 .final-services {
     width: 90%;
@@ -424,29 +424,29 @@
 
 /* Titles in service cards */
 .final-services .text-wrapper-17,
-.final-services .text-wrapper-18,
-.final-services .text-wrapper-20 {
-    position: relative;
-    font-family: "Poppins-Bold", Helvetica;
-    font-weight: 700;
-    font-size: clamp(20px, 2.5vw, 24px);
-    margin-top: 2rem;
-    opacity: 0.9;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
+ .final-services .text-wrapper-18,
+ .final-services .text-wrapper-20 {
+   position: relative;
+   font-family: "Poppins-Bold", Helvetica;
+   font-weight: 700;
+   font-size: clamp(18px, 2.2vw, 22px); /* Reduced font-size */
+   margin-top: 1.5rem; /* Reduced margin-top */
+   opacity: 0.9;
+   transition: opacity 0.3s ease, transform 0.3s ease;
+ }
 
 /* Description text in service cards */
 .final-services .text-wrapper-16,
-.final-services .text-wrapper-19,
-.final-services .text-wrapper-21 {
-    position: relative;
-    font-family: "Poppins-Regular", Helvetica;
-    font-size: clamp(14px, 1.5vw, 16px);
-    line-height: 1.6;
-    margin-top: 1rem;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
+ .final-services .text-wrapper-19,
+ .final-services .text-wrapper-21 {
+   position: relative;
+   font-family: "Poppins-Regular", Helvetica;
+   font-size: clamp(13px, 1.4vw, 15px); /* Reduced font-size */
+   line-height: 1.5; /* Reduced line-height */
+   margin-top: 0.8rem; /* Reduced margin-top */
+   opacity: 0.8;
+   transition: opacity 0.3s ease;
+ }
 
 /* Hover effects for text */
 .final-services [class^="periodontics"]:hover [class^="text-wrapper-"],
@@ -643,7 +643,7 @@
     font-weight: var(--single-line-body-base-font-weight);
     color: #000000;
     font-size: 1.5vw; /* Responsive font size */
-    max-font-size: 24px; /* Maximum font size */
+    /*max-font-size: 24px; /* Maximum font size */
     letter-spacing: var(--single-line-body-base-letter-spacing);
     line-height: var(--single-line-body-base-line-height);
     white-space: nowrap; /* Keep text on one line if possible */
@@ -653,21 +653,21 @@
 }
 
 .text-wrapper-23 {
-    position: relative; /* Changed to relative for better flow */
-    padding-top: 5vw; /* Spacing from the above section */
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%; /* Responsive width */
-    max-width: 1138px; /* Match hero section max-width */
-    text-align: center;
-    font-family: "Poppins-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 3vw; /* Responsive font size */
-    max-font-size: 40px; /* Maximum font size */
-    letter-spacing: 0;
-    line-height: 1.2;
-}
+   position: relative; /* Changed to relative for better flow */
+   padding-top: 4vw; /* Reduced padding-top */
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%; /* Responsive width */
+   max-width: 1138px; /* Match hero section max-width */
+   text-align: center;
+   font-family: "Poppins-Regular", Helvetica;
+   font-weight: 400;
+   color: #000000;
+   font-size: 2.5vw; /* Reduced font-size */
+   /*max-font-size: 36px; /* Reduced max-font-size */
+   letter-spacing: 0;
+   line-height: 1.2;
+ }
 
 .tesimonials {
     display: flex;
@@ -698,15 +698,15 @@
 }
 
 .tesimonials .text-wrapper-24 {
-    font-family: "Manrope-Regular", Helvetica;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 1vw; /* Responsive font size */
-    max-font-size: 16px; /* Maximum font size */
-    letter-spacing: 0.02vw; /* Responsive letter-spacing */
-    line-height: 1.6;
-    margin-bottom: 1.5vw; /* Spacing below text */
-}
+   font-family: "Manrope-Regular", Helvetica;
+   font-weight: 400;
+   color: #ffffff;
+   font-size: 0.9vw; /* Reduced font-size */
+   /*max-font-size: 14px; /* Reduced max-font-size */
+   letter-spacing: 0.02vw; /* Responsive letter-spacing */
+   line-height: 1.5; /* Reduced line-height */
+   margin-bottom: 1.2vw; /* Reduced margin-bottom */
+ }
 
 .tesimonials .group-2,
 .tesimonials .group-5,
@@ -727,16 +727,16 @@
 }
 
 .tesimonials .text-wrapper-25,
-.tesimonials .text-wrapper-26 {
-    font-family: "Abel-Regular", Helvetica;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 1.5vw; /* Responsive font size */
-    max-font-size: 24px; /* Maximum font size */
-    letter-spacing: 0.03vw; /* Responsive letter-spacing */
-    line-height: 1.4;
-    white-space: nowrap;
-}
+ .tesimonials .text-wrapper-26 {
+   font-family: "Abel-Regular", Helvetica;
+   font-weight: 400;
+   color: #ffffff;
+   font-size: 1.2vw; /* Reduced font-size */
+   /*max-font-size: 20px; /* Reduced max-font-size */
+   letter-spacing: 0.03vw; /* Responsive letter-spacing */
+   line-height: 1.4;
+   white-space: nowrap;
+ }
 
 .tesimonials .group-4 {
     display: flex;
@@ -845,19 +845,19 @@
 
 /* ========================= Periodontist Word Section Styles ========================= */
 .text-wrapper-27 {
-    position: relative;
-    width: 80%; /* Match hero section width */
-    max-width: 1138px; /* Match hero section max-width */
-    margin: 5vw auto 2vw;
-    font-family: "Poppins-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 2.77vw; /* Responsive font size */
-    max-font-size: 40px; /* Maximum font size */
-    letter-spacing: 0;
-    line-height: 1.2;
-    text-align: center;
-}
+   position: relative;
+   width: 80%; /* Match hero section width */
+   max-width: 1138px; /* Match hero section max-width */
+   margin: 4vw auto 1.5vw; /* Reduced margin */
+   font-family: "Poppins-Regular", Helvetica;
+   font-weight: 400;
+   color: #000000;
+   font-size: 2.3vw; /* Responsive font size */
+   /*max-font-size: 36px; /* Maximum font size */
+   letter-spacing: 0;
+   line-height: 1.2;
+   text-align: center;
+ }
 
 .drsp-word {
     position: relative;
@@ -871,38 +871,38 @@
 }
 
 .drsp-word .our-practice-is {
-    position: absolute;
-    width: 61.4%; /* Percentage of drsp-word width */
-    top: 35%;    /* Percentage of drsp-word height */
-    left: 19.2%;   /* Percentage of drsp-word width */
-    font-family: "Poppins-Italic", Helvetica;
-    font-weight: 400;
-    font-style: italic;
-    color: #ffffff;
-    font-size: 2vw; /* Responsive font size */
-    max-font-size: 32px; /* Maximum font size */
-    text-align: center;
-    font-size: 2.22vw; /* Responsive font size */
-    letter-spacing: 0;
-    line-height: 1.2;
-}
+   position: absolute;
+   width: 61.4%; /* Percentage of drsp-word width */
+   top: 35%;    /* Percentage of drsp-word height */
+   left: 19.2%;   /* Percentage of drsp-word width */
+   font-family: "Poppins-Italic", Helvetica;
+   font-weight: 400;
+   font-style: italic;
+   color: #ffffff;
+   font-size: 1.8vw; /* Responsive font size */
+   /*max-font-size: 28px; /* Maximum font size */
+   text-align: center;
+   font-size: 2vw; /* Responsive font size */
+   letter-spacing: 0;
+   line-height: 1.2;
+ }
 
 .text-wrapper-28 {
-    position: relative;
-    width: 80%; /* Match hero section width */
-    max-width: 1138px; /* Match hero section max-width */
-    margin: 3vw auto;
-    text-align: center;
-    font-family: var(--single-line-body-base-font-family);
-    font-weight: var(--single-line-body-base-font-weight);
-    color: #000000;
-    font-size: 1.66vw; /* Responsive font size */
-    max-font-size: 24px; /* Maximum font size */
-    letter-spacing: var(--single-line-body-base-letter-spacing);
-    line-height: var(--single-line-body-base-line-height);
-    white-space: normal; /* Allow text to wrap */
-    font-style: var(--single-line-body-base-font-style);
-}
+   position: relative;
+   width: 80%; /* Match hero section width */
+   max-width: 1138px; /* Match hero section max-width */
+   margin: 2.5vw auto; /* Reduced margin */
+   text-align: center;
+   font-family: var(--single-line-body-base-font-family);
+   font-weight: var(--single-line-body-base-font-weight);
+   color: #000000;
+   font-size: 1.4vw; /* Responsive font size */
+   /*max-font-size: 20px; /* Reduced max-font-size */
+   letter-spacing: var(--single-line-body-base-letter-spacing);
+   line-height: var(--single-line-body-base-line-height);
+   white-space: normal; /* Allow text to wrap */
+   font-style: var(--single-line-body-base-font-style);
+ }
 
 .line-6 {
     position: relative;
@@ -953,14 +953,14 @@
 /* ========================= Contact Section Styles ========================= */
 
 .text-wrapper-29 {
-  width: 100%;
-  max-width: 411px;
-  margin: 2rem auto;
-  color: #000000;
-  font-size: clamp(28px, 4vw, 40px);
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: 400;
-  text-align: center;
+ width: 100%;
+ max-width: 411px;
+ margin: 1.5rem auto; /* Reduced margin */
+ color: #000000;
+ font-size: clamp(24px, 3.5vw, 36px); /* Reduced font-size */
+ font-family: "Poppins-Regular", Helvetica;
+ font-weight: 400;
+ text-align: center;
 }
 
 
@@ -1143,9 +1143,9 @@
 }
 
 .title {
-  font-size: 2.25rem;
-  font-weight: 400;
-  margin-bottom: 48px;
+ font-size: 1.8rem; /* Reduced font-size */
+ font-weight: 400;
+ margin-bottom: 32px; /* Reduced margin-bottom */
 }
 
 .faq-container {
@@ -1186,11 +1186,11 @@
 }
 
 .question {
-  font-size: 1.5rem;
-  line-height: 37.2px;
-  letter-spacing: 0.36px;
-  font-weight: 500;
-  color: #3b3131;
+ font-size: 1.2rem; /* Reduced font-size */
+ line-height: 30px; /* Reduced line-height */
+ letter-spacing: 0.3px; /* Reduced letter-spacing */
+ font-weight: 500;
+ color: #3b3131;
 }
 
 .faq-header.active .question {
@@ -1251,11 +1251,11 @@
 }
 
 .answer {
-  padding: 0 24px 24px;
-  font-size: 1.25rem;
-  line-height: 31px;
-  letter-spacing: 0.3px;
-  font-weight: 400;
+ padding: 0 20px 20px; /* Reduced padding */
+ font-size: 1rem; /* Reduced font-size */
+ line-height: 28px; /* Reduced line-height */
+ letter-spacing: 0.25px; /* Reduced letter-spacing */
+ font-weight: 400;
 }
 
 .faq-divider {
@@ -1277,20 +1277,20 @@
 
 .text-wrapper-45 {
 
-  width: 100%;
-  max-width: 411px;
-  margin: 2rem auto;
-  color: #000000;
-  font-size: clamp(28px, 4vw, 40px);
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: 400;
-  text-align: center;
-  font-size: 3vw;
-  max-font-size: 40px;
-  letter-spacing: 0;
-  line-height: 1.5;
-  margin-bottom: 3vw;
-  transition: color 0.3s ease;
+ width: 100%;
+ max-width: 411px;
+ margin: 1.5rem auto; /* Reduced margin */
+ color: #000000;
+ font-size: clamp(24px, 3.5vw, 36px); /* Reduced font-size */
+ font-family: "Poppins-Regular", Helvetica;
+ font-weight: 400;
+ text-align: center;
+ font-size: 2.5vw; /* Reduced font-size */
+ /*max-font-size: 36px; /* Reduced max-font-size */
+ letter-spacing: 0;
+ line-height: 1.4; /* Reduced line-height */
+ margin-bottom: 2.5vw; /* Reduced margin-bottom */
+ transition: color 0.3s ease;
 }
 
 .text-wrapper-45:hover {
@@ -1324,14 +1324,14 @@
 }
 
 .register-into-a {
-  width: 45%;
-  min-width: 300px;
-  font-family: "Poppins-Light", Helvetica;
-  font-size: 1.8vw;
-  max-font-size: 24px;
-  line-height: 1.8;
-  text-align: center;
-  transition: transform 0.3s ease;
+ width: 45%;
+ min-width: 300px;
+ font-family: "Poppins-Light", Helvetica;
+ font-size: 1.5vw; /* Reduced font-size */
+ /*max-font-size: 20px; /* Reduced max-font-size */
+ line-height: 1.6; /* Reduced line-height */
+ text-align: center;
+ transition: transform 0.3s ease;
 }
 
 .register-into-a:hover {

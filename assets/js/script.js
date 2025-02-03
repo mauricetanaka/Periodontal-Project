@@ -179,3 +179,27 @@ faqData.forEach((faq, index) => {
         }
     });
 });
+
+//About Us Section, Meet the team
+
+function setupTeamInteractions() {
+    // Get all plus buttons and bios
+    const plusButtons = document.querySelectorAll('.text-wrapper-9, .text-wrapper-10, .text-wrapper-15');
+    const bios = document.querySelectorAll('.p, .a-qualified-oral, .text-wrapper-16');
+  
+    // Add click handlers to plus buttons
+    plusButtons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        // Toggle the active class on the corresponding bio
+        bios[index].classList.toggle('active');
+        
+        // Rotate plus button when active
+        button.style.transform = button.style.transform === 'rotate(45deg)' 
+          ? 'rotate(0deg)' 
+          : 'rotate(45deg)';
+      });
+    });
+  }
+  
+  // Initialize when DOM is loaded
+  document.addEventListener('DOMContentLoaded', setupTeamInteractions);

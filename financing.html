@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financing UP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uthotho Implants is a dental implant company that provides high quality dental implants.">
+    <meta name="keywords" content="dental implants, dental implant company, dental implants for teeth, dental implants for jaw, dental implants for teeth, dental implants for jaw, dental implants for teeth, dental implants for jaw">
+    <meta name="author" content="Tanaka Munyoro">
+    <title>Booking - Uthotho Implants</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/financing.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+              <a href="#" class="logo-link">
+                <img class="copy-of-untitled" src="assets/img/copy-of-untitled-design.png" alt="Logo" />
+              </a>
+              <button class="hamburger-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+              </button>
+              <div class="navbar-2">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#financing" class="nav-link text-wrapper-2">Financing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+              </div>
+              <div class="login-navbar">
+                <a href="#academy-login" class="login-button">
+                  <div class="span">
+                    <div class="text-wrapper-3">Academy Login</div>
+                  </div>
+                </a>
+              </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="financing">
+            <div class="hero-section"><div class="text-wrapper-3">Get Financing</div></div>
+            <div class="text-wrapper-4">Financing Your Treatment</div>
+            <div class="final-services">
+                <div class="overlap">
+                    <div class="dr-debbie">
+                        <div class="text-wrapper-5">Treatment Quotation</div>
+                        <p class="a-consultation-will">
+                            A consultation will provide our specialist with enough information to draw up a suitable treatment plan.
+                            This will be discussed with you and a cost estimate tailored to your treatment will be prepared and
+                            given to you.<br />
+                            For extensive and complex cases, our specialist may invite you to a further consultation where you will
+                            be presented with digitised treatment results to help you better understand the treatments on offer and
+                            the options available to you.
+                        </p>
+                    </div>
+                </div>
+                <div class="overlap-group">
+                    <div class="text-wrapper-6">Delivery of Treatment</div>
+                    <p class="once-you-have">
+                        Once you have accepted the quote provided to you, our reception will arrange an appointment for your
+                        treatment and you may be asked for a deposit to cover laboratory and surgical preparatory costs. (this
+                        depends on the agreed procedure)<br />
+                        You will receive a treatment contract explaining your treatment option and you will be asked to sign a
+                        form giving us permission to carry out the treatment you have requested.<br />
+                        You must settle your bill on the day of treatment in accordance with the quotation documents.
+                    </p>
+                </div>
+                <div class="overlap-group">
+                    <div class="text-wrapper-6">Booking a consultation</div>
+                    <p class="once-you-have">
+                        You may have been referred for a consultation by your doctor/dentist or dental specialist or you may have
+                        come directly to us for treatment. Our friendly reception will coordinate the appointments with you.<br />
+                        You will also be informed of the expected fee for a consultation depending on the type of treatment you
+                        require.<br />
+                        X-rays will be taken on the day of your consultation and in some cases you will be referred for an
+                        additional blood test at one of our partner laboratories.
+                    </p>
+                </div>
+            </div>
+            <div class="text-wrapper-4">Our Financing Partners</div>
+            <div class="service">
+                <p class="p">
+                    We have recently worked with Fin Medical Loans. Fin Medical Loans is one of the largest independent
+                    providers of medical financing and financial services in Southern Africa. They enable South Africans to go
+                    ahead with their medical treatments when they are struggling to cover the costs immediately.
+                </p>
+            </div>
+            <div class="container-1">
+                <h2 class="title">Financial FAQs</h2>
+                <div class="faq-container" id="faqContainer"></div>
+            </div>
+        
+            <script>
+                const faqData = [
+                    {
+                        question: "What payment methods do you accept?",
+                        answer: "We accept major credit cards, debit cards, bank transfers, and flexible financing options. Contact our office for more details."
+                    },
+                    {
+                        question: "Do you offer financing options?",
+                        answer: "Yes, we provide flexible financing plans through third-party lenders to help make your periodontal care more affordable."
+                    },
+                    {
+                        question: "Does insurance cover periodontal treatment?",
+                        answer: "Insurance coverage varies by provider and plan. We recommend checking with your insurance provider or contacting our office for assistance with verification."
+                    },
+                    {
+                        question: "Do you offer payment plans for expensive treatments?",
+                        answer: "Yes, we offer interest-free and low-interest payment plans to help spread out the cost of treatment over manageable installments."
+                    },
+                    {
+                        question: "Is there a discount for upfront payment?",
+                        answer: "Yes, we offer discounts for patients who choose to pay in full at the time of service. Contact us for more details."
+                    }
+                ];
+            
+                const faqContainer = document.getElementById('faqContainer');
+            
+                faqData.forEach((faq, index) => {
+                    const faqItem = document.createElement('div');
+                    faqItem.className = 'faq-item';
+                    
+                    faqItem.innerHTML = `
+                        <div class="faq-header">
+                            <button class="faq-button">
+                                <h3 class="question">${faq.question}</h3>
+                                <div class="toggle-icon"></div>
+                            </button>
+                            <div class="answer-container">
+                                <p class="answer">${faq.answer}</p>
+                            </div>
+                        </div>
+                        <div class="faq-divider"></div>
+                    `;
+            
+                    faqContainer.appendChild(faqItem);
+            
+                    const faqHeader = faqItem.querySelector('.faq-header');
+                    const faqButton = faqItem.querySelector('.faq-button');
+                    const answerContainer = faqItem.querySelector('.answer-container');
+            
+                    faqButton.addEventListener('click', () => {
+                        const isActive = faqHeader.classList.contains('active');
+                        
+                        document.querySelectorAll('.faq-header').forEach(header => {
+                            header.classList.remove('active');
+                        });
+                        document.querySelectorAll('.answer-container').forEach(container => {
+                            container.classList.remove('active');
+                        });
+            
+                        if (!isActive) {
+                            faqHeader.classList.add('active');
+                            answerContainer.classList.add('active');
+                        }
+                    });
+                });
+            </script>
+
+            <div class="a-2">
+                <div class="div-wrapper"><div class="text-wrapper-10">Apply for a Loan</div></div>
+                <img class="span-after" src="img/span-after-2.svg" />
+            </div>
+
+            <div class="text-wrapper-12">Financing Disclaimer</div>
+            <p class="as-our-patient-and">
+                As our patient and our direct client, you are responsible for payment of all procedures offered. We do not
+                have a contract with a health insurance company or any other third party. However, you will receive a
+                comprehensive billing statement that you can submit to your medical aid for direct reimbursement.<br />Our
+                treatment plans are easy to understand and designed to be transparent and accepted by medical aids in South
+                Africa. We recommend that you submit your estimate to your medical aid provider so that you can get a feel for
+                how much you will be reimbursed after your treatment.<br />For your convenience, we accept cash, credit and
+                debit cards (Visa, Master Card). Electronic payments can be made at the practice or from home before treatment
+                begins.<br />It is important that you understand and agree to both the treatment plan and the estimated
+                treatment costs; you have the right to accept or decline the treatment plan we recommend. If you reject or
+                delay the recommended treatment, you do so at your own risk. You will be asked to sign consent to our
+                treatment plan and cost estimate prior to any procedure. If clinical conditions require a change in treatment,
+                you will be advised of the details and cost before we proceed.<br />For implant procedures, the cost of the
+                , its components and any biomaterials must be paid and cleared at least three working days before the
+                procedure so that the required parts can be delivered. Otherwise the operation may be cancelled.<br />The cost
+                estimates are usually valid for 3 months. Your medical aid is a contract between you and the health insurance
+                company and NOT between the doctor and the health insurance company. All medical aid companies have different
+                conditions, limits and benefit levels. We do not take responsibility for your medical aid cover and you are
+                responsible for paying all bills.<br />Our tariffs are classified as “private tariffs&#34; and may be slightly
+                higher than health insurance tariffs.
+            </p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <img class="copy-of-untitled" src="assets/img/copy-of-untitled-design.png" />
+        <div class="social-media-links">
+            <a href="https://www.linkedin.com/in/siphesihle-mpungose-2baba8230/" target="_blank" rel="noopener noreferrer"><img class="img-2" src="assets/img/icons8-linkedin-24-1.png" /></a>
+            <a href="https://www.facebook.com/profile.php?id=61555718162272" target="_blank" rel="noopener noreferrer"><img class="img-2" src="assets/img/icons8-facebook-24-1.png" /></a>
+            <a href="https://www.instagram.com/drspmpungose/" target="_blank" rel="noopener noreferrer"><img class="img-2" src="assets/img/icons8-instagram-24-1.png" /></a>
+            <a href="https://wa.me/message/JR6RXIJVPTZXG1" target="_blank" rel="noopener noreferrer"><img class="img-2" src="assets/img/icons8-whatsapp-24-1.png" /></a>
+            <a href="https://www.tiktok.com/@uthotho_implants?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer"><img class="img-2" src="assets/img/icons8-tiktok-24-1-1.png" /></a>
+        </div>
+        <div class="footer-buttons">
+            <a href="#home" class="text-wrapper-49">Home</a>
+            <a href="#services" class="text-wrapper-50">Services</a>
+            <a href="#about" class="text-wrapper-51">About</a>
+            <a href="#financing" class="text-wrapper-52">Financing</a>
+            <a href="#contact" class="text-wrapper-52">Contact</a>
+        </div>
+        <div class="text-wrapper-53">Opening Hours</div>
+        <div class="ul-elementor-icon">
+            <div class="text-wrapper-54">Monday: Closed</div>
+            <p class="text-wrapper-55">Tuesday - Friday: 10:00 - 19:00</p>
+            <div class="text-wrapper-56">Saturday: 8:00 - 16:00</div>
+            <div class="text-wrapper-57">Sunday: Closed</div>
+        </div>
+        <div class="bottom-email">
+            <div class="a-6">
+                <div class="div-placeholder"><div class="text-wrapper-58">Your Email Address...</div></div>
+                <div class="span-wrapper">
+                    <div class="span-5"><div class="text-wrapper-59">Email Us</div></div>
+                </div>
+            </div>
+        </div>
+        <p class="text-wrapper-60">Room 207, 200 Rivonia Rd, Morningside, Sandton, 2196</p>
+        <p class="element">
+            <span class="text-wrapper-61">+27 </span>
+                <a
+                    href="https://www.google.com/search?client=safari&rls=en&q=doctor+sp+mpungose&ie=UTF-8&oe=UTF-8#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><span class="text-wrapper-62">10 786 1396</span></a>
+        </p>
+        <div class="text-wrapper-63">© 2025 Uthotho Implants</div>
+    </footer>
+</body>
+</html>

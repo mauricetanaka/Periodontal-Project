@@ -1,0 +1,631 @@
+/* ========================= Services Section Styles ========================= */
+.hero-section-2 .text-wrapper-3 {
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 4vw;
+    text-align: center;
+    line-height: 1.5;
+    padding: 2vw;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-section-2 {
+    background-image: url(../img/Hero-Section.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 10vw 0;
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    max-width: 1138px;
+    min-height: 250px;
+    margin: 1rem auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Common styles for service sections */
+  .periodontics, .implantology, .oral {
+    position: relative;
+    width: 80%;
+    max-width: 922px;
+    margin: 4vw auto;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    aspect-ratio: 922/279;
+  }
+  
+  /* Hover effect for service sections */
+  .periodontics:hover, .implantology:hover, .oral:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Background images with parallax effect */
+  .periodontics {
+    background-image: url(../img/PeriodonticsImg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .implantology {
+    background-image: url(../img/PeriodonticsImg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .oral {
+    background-image: url(../img/PeriodonticsImg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Line decoration */
+  .line {
+    width: 30%;
+    height: 4px;
+    margin: 2vw auto;
+    display: block;
+  }
+  
+  .line path {
+    stroke: white;
+    stroke-width: 3;
+    stroke-dasharray: 270;
+    stroke-dashoffset: 270;
+    animation: drawLine 1.5s ease forwards;
+  }
+  
+  @keyframes drawLine {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  /* Section titles */
+  .text-wrapper-4, .text-wrapper-6, .text-wrapper-7 {
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 2.5vw;
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding: 2vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards 0.5s;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Description paragraphs */
+  .periodontology-or, .a-dental-implant-is, .an-oral-medicine {
+    width: 80%;
+    max-width: 922px;
+    margin: 2vw auto;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #2a2a2a;
+    font-size: clamp(16px, 1.5vw, 24px);
+    line-height: 1.8;
+    padding: 2vw;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .periodontics, .implantology, .oral {
+      width: 90%;
+      aspect-ratio: 16/9;
+      margin: 6vw auto;
+    }
+  
+    .text-wrapper-4, .text-wrapper-6, .text-wrapper-7 {
+      font-size: 4vw;
+      padding: 4vw;
+    }
+  
+    .periodontology-or, .a-dental-implant-is, .an-oral-medicine {
+      width: 90%;
+      font-size: 16px;
+      padding: 4vw;
+    }
+  
+    .line {
+      width: 50%;
+      margin: 4vw auto;
+    }
+  
+  }
+  
+  /* Loading Animation */
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .periodontics, .implantology, .oral {
+    background-size: 200% 200%;
+    animation: gradientBG 15s ease infinite;
+  }
+
+  /*====================== Periodontal Treatment and Implantology Section Styles =======================*/
+/* Services Container */
+.services-container {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 4vw 0;
+}
+
+/* Section Styles */
+.section {
+  margin-bottom: 8vw;
+  position: relative;
+}
+
+.section-title {
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  color: #000000;
+  margin-bottom: 1.5vw;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.section-subtitle {
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+  color: #000000;
+  margin-bottom: 4vw;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease 0.2s forwards;
+  text-align: center;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  gap: 2vw;
+  margin-bottom: 4vw;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease 0.4s forwards;
+}
+
+.periodontal-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.implantology-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Service Cards */
+.service-card {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  min-height: 300px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-card.dark {
+  background-color: #3a3a3aa6;
+  color: #ffffff;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-image: url(../img/treatment1.png);
+}
+
+.service-card.dark::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
+  z-index: 1;
+  transition: opacity 0.4s ease;
+}
+
+.service-card.dark:hover::before {
+  opacity: 0.8;
+}
+
+/* Service Content */
+.service-content {
+  position: relative;
+  z-index: 2;
+  padding: 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-title {
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+  margin-bottom: 1.5vw;
+  line-height: 1.4;
+  align-self: center;
+}
+
+.service-description {
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Service Images */
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.service-card:hover .service-image {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .services-container {
+      width: 95%;
+      padding: 3vw 0;
+  }
+
+  .service-content {
+      padding: 3vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+      width: 92%;
+      padding: 5vw 0;
+  }
+
+  .section {
+      margin-bottom: 12vw;
+  }
+
+  .services-grid {
+      gap: 4vw;
+  }
+
+  .service-card {
+      min-height: 250px;
+  }
+
+  .service-content {
+      padding: 4vw;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .services-container {
+      width: 90%;
+      padding: 6vw 0;
+  }
+
+  .section-title {
+      text-align: center;
+  }
+
+  .section-subtitle {
+      text-align: center;
+  }
+
+  .service-card {
+      min-height: 200px;
+  }
+
+  .service-content {
+      padding: 5vw;
+  }
+}
+
+/*====================== Oral Medicine Section Styles =======================*/
+/* Services Section Container */
+.text-wrapper-13,
+.text-wrapper-14 {
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2vw auto;
+    padding: 0 5%;
+}
+
+.text-wrapper-13 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.text-wrapper-14 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin-bottom: 3rem;
+}
+
+/* Oral Health Care Section */
+.oral-health-caare {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 0 5%;
+}
+
+.compassionate-care,
+.expert-diagnosis-of,
+.personalized-2 {
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Background images with parallax effect */
+.compassionate-care-wrapper {
+  background-image: url(../img/Service-11.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expert-diagnosis-of-wrapper {
+  background-image: url(../img/Service-12.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-3 {
+  background-image: url(../img/Service-13.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.compassionate-care:hover,
+.expert-diagnosis-of:hover,
+.personalized-2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.text-wrapper-9 {
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    color: #ffffff;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.text-wrapper-10 {
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Schedule Consultation Button */
+.a-6 {
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+    max-width: 300px;
+}
+
+.div-wrapper {
+    background: #2a2a2a;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.div-wrapper:hover {
+    transform: scale(1.05);
+    background-color: #3a3a3a;
+}
+
+.text-wrapper-5 {
+    color: #ffffff;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    text-align: center;
+}
+
+/* Technology Section */
+.line-3 {
+    width: 90%;
+    max-width: 1038px;
+    height: 2px;
+    margin: 4rem auto;
+    background: #000000;
+}
+
+.text-wrapper-15,
+.text-wrapper-16,
+.text-wrapper-18 {
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: clamp(2rem, 3.5vw, 2.5rem);
+    color: #000000;
+    text-align: center;
+    margin: 3rem auto;
+    padding: 0 5%;
+}
+
+.tech {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.rectangle,
+.rectangle-2,
+.rectangle-3,
+.rectangle-4 {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 360/250;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.rectangle:hover,
+.rectangle-2:hover,
+.rectangle-3:hover,
+.rectangle-4:hover {
+    transform: scale(1.05);
+}
+
+/* Fussen Section */
+.fussen,
+.collection-methods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 5%;
+}
+
+.text-wrapper-17,
+.text-wrapper-19 {
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    line-height: 1.6;
+    color: #000000;
+}
+
+.div-2 {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 414/323;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .fussen,
+    .collection-methods {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .text-wrapper-17,
+    .text-wrapper-19 {
+        order: 2;
+    }
+
+    .div-2,
+    .rectangle-4 {
+        order: 1;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.oral-health-caare > div,
+.tech > img,
+.fussen > *,
+.collection-methods > * {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Ensure animations play at different times */
+.oral-health-caare > div:nth-child(2) { animation-delay: 0.2s; }
+.oral-health-caare > div:nth-child(3) { animation-delay: 0.4s; }
+.tech > img:nth-child(2) { animation-delay: 0.2s; }
+.tech > img:nth-child(3) { animation-delay: 0.4s; }
