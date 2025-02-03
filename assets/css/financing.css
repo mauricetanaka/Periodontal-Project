@@ -1,0 +1,472 @@
+/* ================== Financing Hero Section ==================== */
+.financing .hero-section {
+    position: relative;
+    width: 90%;
+    max-width: 1197px;
+    min-height: 333px;
+    margin: 4vw auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.financing .hero-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.financing .text-wrapper-3 {
+    width: 90%;
+    max-width: 786px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.financing .text-wrapper-4 {
+    width: 90%;
+    max-width: 628px;
+    margin: 3vw auto;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    letter-spacing: 0.01em;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Services Section */
+.financing .final-services {
+    width: 90%;
+    max-width: 1138px;
+    margin: 4vw auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2vw;
+    padding: 0 1vw;
+}
+
+.financing .overlap,
+.financing .overlap-group,
+.financing .overlap-2 {
+    position: relative;
+    height: 560px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.financing .overlap:hover,
+.financing .overlap-group:hover,
+.financing .overlap-2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.financing .overlap-group {
+    position: relative;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.financing .text-wrapper-5,
+.financing .text-wrapper-6,
+.financing .text-wrapper-7 {
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 2vw;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.financing .a-consultation-will,
+.financing .once-you-have,
+.financing .you-may-have-been {
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    text-align: center;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+    padding: 0 1vw;
+}
+
+/* Bottom Service Section */
+.financing .service {
+    width: 90%;
+    max-width: 1058px;
+    margin: 4vw auto;
+    padding: 3vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.financing .service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.financing .service .p {
+    width: 90%;
+    max-width: 893px;
+    margin: 0 auto;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: clamp(1.1rem, 1.5vw, 1.5rem);
+    text-align: center;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .financing .final-services {
+        grid-template-columns: 1fr;
+        gap: 4vw;
+    }
+    
+    .financing .overlap,
+    .financing .overlap-group,
+    .financing .overlap-2 {
+        height: auto;
+        min-height: 500px;
+    }
+    
+    .financing .text-wrapper-3,
+    .financing .text-wrapper-4 {
+        padding: 2vw;
+    }
+    
+    .financing .service {
+        padding: 5vw 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .financing .hero-section {
+        min-height: 250px;
+    }
+    
+    .financing .overlap,
+    .financing .overlap-group,
+    .financing .overlap-2 {
+        min-height: 400px;
+    }
+    
+    .financing .a-consultation-will,
+    .financing .once-you-have,
+    .financing .you-may-have-been {
+        padding: 0;
+    }
+}
+
+/* ========================= FAQ Section Styles ========================= */
+
+.container-1 {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 16px;
+    position: relative;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+        padding: 0 32px;
+    }
+  }
+  
+  .border-line {
+    width: 100%;
+    border-top: 1px solid black;
+    margin: 32px 0;
+  }
+  
+  .title {
+   font-weight: 400;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: 90%;
+   max-width: 628px;
+   margin: 3vw auto;
+   font-family: "Poppins-Regular", Helvetica;
+   font-weight: 400;
+   color: #000000;
+   font-size: clamp(1.8rem, 3vw, 2.5rem);
+   letter-spacing: 0.01em;
+   line-height: 1.4;
+  }
+  
+  .faq-container {
+    width: 100%;
+    max-width: 981px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    margin-bottom: 24px;
+  }
+  
+  .faq-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .faq-header {
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .faq-header.active {
+    background-color: #2a2a2a;
+    color: white;
+    margin-bottom: 16px;
+  }
+  
+  .faq-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    text-align: left;
+  }
+  
+  .question {
+   font-size: 1.2rem; /* Reduced font-size */
+   line-height: 30px; /* Reduced line-height */
+   letter-spacing: 0.3px; /* Reduced letter-spacing */
+   font-weight: 500;
+   color: #3b3131;
+  }
+  
+  .faq-header.active .question {
+    color: white;
+  }
+  
+  .toggle-icon {
+    width: 32px;
+    height: 32px;
+    border: 2px solid #3b3131;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+    margin-left: 16px;
+  }
+  
+  .faq-header.active .toggle-icon {
+    border-color: white;
+    transform: rotate(45deg);
+  }
+  
+  .toggle-icon::before,
+  .toggle-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #3b3131;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .faq-header.active .toggle-icon::before,
+  .faq-header.active .toggle-icon::after {
+    background-color: white;
+  }
+  
+  .toggle-icon::before {
+    width: 16px;
+    height: 2px;
+  }
+  
+  .toggle-icon::after {
+    width: 2px;
+    height: 16px;
+  }
+  
+  .answer-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .answer-container.active {
+    max-height: 500px;
+    opacity: 1;
+  }
+  
+  .answer {
+   padding: 0 20px 20px; /* Reduced padding */
+   font-size: 1rem; /* Reduced font-size */
+   line-height: 28px; /* Reduced line-height */
+   letter-spacing: 0.25px; /* Reduced letter-spacing */
+   font-weight: 400;
+  }
+  
+  .faq-divider {
+    width: 100%;
+    border-bottom: 1px solid #3b3131;
+    margin-top: 8px;
+  }
+
+  /* ========================= Disclaimer Section Styles ========================= */
+
+  /* Previous styles remain the same - adding new styles below */
+
+/* Apply for Loan Button */
+.financing .a-2 {
+    display: flex;
+    width: clamp(200px, 20vw, 225px);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    margin: 4vw auto;
+    background-color: #2a2a2a;
+    border-radius: 42px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.financing .a-2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #3a3a3a;
+}
+
+.financing .a-2:active {
+    transform: translateY(-1px);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.financing .div-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.financing .text-wrapper-10 {
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+}
+
+.financing .span-after {
+    width: clamp(16px, 1.5vw, 20px);
+    height: auto;
+    margin-left: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.financing .a-2:hover .span-after {
+    transform: translateX(5px);
+}
+
+/* Financing Disclaimer Section */
+.financing .text-wrapper-12 {
+    width: 90%;
+    max-width: 449px;
+    margin: 4vw auto 2vw;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1.4;
+    text-align: left;
+    position: relative;
+}
+
+.financing .as-our-patient-and {
+    width: 90%;
+    max-width: 1123px;
+    margin: 2vw auto 4vw;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: clamp(1rem, 1.2vw, 1.25rem);
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.financing .as-our-patient-and:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.financing .as-our-patient-and br {
+    margin-bottom: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .financing .text-wrapper-12 {
+        text-align: center;
+        margin: 6vw auto 3vw;
+    }
+
+    .financing .as-our-patient-and {
+        padding: 1.5rem;
+        font-size: clamp(0.95rem, 1.1vw, 1.1rem);
+        line-height: 1.5;
+    }
+
+    .financing .a-2 {
+        margin: 6vw auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .financing .text-wrapper-12 {
+        margin: 8vw auto 4vw;
+    }
+
+    .financing .as-our-patient-and {
+        padding: 1.25rem;
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .financing .a-2 {
+        width: 80%;
+        max-width: 200px;
+        padding: 0.8rem 1.2rem;
+    }
+}

@@ -59,13 +59,13 @@ header {
     font-family: "Poppins-Bold", Helvetica;
     font-weight: 700;
     color: #ffffff;
-    font-size: 1.1vw;
-    max-font-size: 16px;
+    font-size: 0.9vw; /* Reduced font-size */
+    /*max-font-size: 14px; /* Reduced max-font-size */
     letter-spacing: 0.02vw;
-    line-height: 1.6vw;
+    line-height: 1.4vw; /* Reduced line-height */
     text-decoration: none;
-    padding: 0.7vw 1.2vw;
-    border-radius: 0.6vw;
+    padding: 0.6vw 1vw; /* Reduced padding */
+    border-radius: 0.5vw; /* Reduced border-radius */
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -238,7 +238,7 @@ header {
       width: 10vw;
     }
   }
-/* Hero Section Styles */
+/* ========================= Hero Section Styles ========================= */
 .hero-section {
     position: relative;
     width: 80%;
@@ -258,16 +258,16 @@ header {
   }
   
   .hero-section .p {
-    position: relative;
-    width: 100%;
-    max-width: 880px;
-    font-family: "Poppins-Regular", Helvetica;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    line-height: 1.4;
-    margin-bottom: 2rem;
-  }
+     position: relative;
+     width: 100%;
+     max-width: 880px;
+     font-family: "Poppins-Regular", Helvetica;
+     font-weight: 400;
+     color: #ffffff;
+     font-size: clamp(2rem, 4vw, 3rem); /* Reduced font-size */
+     line-height: 1.3; /* Reduced line-height */
+     margin-bottom: 1.5rem; /* Reduced margin-bottom */
+   }
   
   .hero-section .main-content {
     position: relative;
@@ -452,7 +452,7 @@ header {
     font-weight: 400;
     color: #ffffff;
     font-size: 1.2vw; /* Scalable font size */
-    max-font-size: 16px; /* Maximum font size */
+    /*max-font-size: 16px; /* Maximum font size */
     letter-spacing: 0.02vw; /* Scalable letter spacing */
     line-height: 1.5; /* Improved line height */
     transition: color 0.3s ease; /* Smooth color transition on hover */
@@ -480,7 +480,7 @@ header {
     font-family: "Poppins-Regular", Helvetica;
     font-weight: 400;
     font-size: 1vw; /* Scalable font size */
-    max-font-size: 13px; /* Maximum font size */
+   /* max-font-size: 13px; /* Maximum font size */
     letter-spacing: 0;
     line-height: 1.8; /* Improved line height */
     white-space: nowrap;
@@ -499,7 +499,7 @@ header {
     font-family: "Poppins-Regular", Helvetica;
     font-weight: 400;
     font-size: 1vw; /* Scalable font size */
-    max-font-size: 13px; /* Maximum font size */
+    /*max-font-size: 13px; /* Maximum font size */
     letter-spacing: 0;
     line-height: 1.8; /* Improved line height */
     white-space: nowrap;
@@ -533,7 +533,7 @@ header {
     font-weight: 400;
     color: #00000070;
     font-size: 1.2vw; /* Scalable font size */
-    max-font-size: 16px; /* Maximum font size */
+    /*max-font-size: 16px; /* Maximum font size */
     letter-spacing: 0;
     line-height: normal;
     white-space: nowrap;
@@ -565,7 +565,7 @@ header {
     font-weight: 400;
     color: #ffffff;
     font-size: 1vw; /* Scalable font size */
-    max-font-size: 12px; /* Maximum font size */
+    /*max-font-size: 12px; /* Maximum font size */
     text-align: center;
     letter-spacing: 0;
     line-height: 1.8; /* Improved line height */
@@ -574,7 +574,7 @@ header {
 
 .footer .text-wrapper-60 {
     font-size: 1.2vw; /* Scalable font size */
-    max-font-size: 16px; /* Maximum font size */
+    /*max-font-size: 16px; /* Maximum font size */
     margin-top: 3vw; /* Scalable top margin */
     margin-bottom: 1vw; /* Scalable bottom margin */
     text-align: center; /* Center align text */
@@ -582,7 +582,7 @@ header {
 
 .footer .element {
     font-size: 1.2vw; /* Scalable font size */
-    max-font-size: 16px; /* Maximum font size */
+    /*max-font-size: 16px; /* Maximum font size */
     white-space: nowrap; /* Prevent phone number from wrapping */
     text-align: center; /* Center align phone number */
     margin-bottom: 3vw; /* Scalable bottom margin */
@@ -590,7 +590,7 @@ header {
 
 .footer .text-wrapper-61 {
     font-size: 1.2vw; /* Scalable font size */
-    max-font-size: 16px; /* Maximum font size */
+    /*max-font-size: 16px; /* Maximum font size */
 }
 
 .footer .text-wrapper-62 {
@@ -599,7 +599,7 @@ header {
 
 .footer .text-wrapper-63 {
     font-size: 1.4vw; /* Scalable font size */
-    max-font-size: 18px; /* Maximum font size */
+    /*max-font-size: 18px; /* Maximum font size */
     margin-top: 4vw; /* Scalable top margin */
     text-align: center; /* Center align copyright text */
 }
@@ -675,10 +675,36 @@ header {
         text-align: left; /* Align placeholder text to the left */
         justify-content: center; /* Center placeholder content */
         padding: 0; /* Reset padding */
+        font-size: 1vw; /* Scalable font size */
+        /*max-font-size: 13px; /* Maximum font size */
+        letter-spacing: 0.02vw;
+        line-height: 1.8; /* Improved line height */
+        white-space: nowrap;
+        margin-bottom: 0.5vw;
+        margin-top: 0.5vw;
+        width: auto;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
     }
 
     .footer .text-wrapper-58 {
         text-align: left; /* Align placeholder text to the left */
+        justify-content: center; /* Center placeholder content */
+        padding: 0; /* Reset padding */
+        width: auto;
+        margin: 0;
+        font-size: 1vw; /* Scalable font size */
+        /*max-font-size: 13px; /* Maximum font size */
+        letter-spacing: 0.02vw;
+        line-height: 1.8; /* Improved line height */
+        white-space: nowrap;
+        margin-bottom: 0.5vw;
+        margin-top: 0.5vw;
+        width: auto;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
     }
 
 
