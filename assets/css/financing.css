@@ -84,6 +84,26 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-image: url(../img/periodontics.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.financing .overlap {
+    position: relative;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-image: url(../img/surgical.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .financing .text-wrapper-5,
@@ -121,6 +141,10 @@
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-image: url(../img/Service-6.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .financing .service:hover {
