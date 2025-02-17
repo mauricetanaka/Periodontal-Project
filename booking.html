@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Form</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Uthotho Implants is a dental implant company that provides high quality dental implants.">
     <meta name="keywords" content="dental implants, dental implant company, dental implants for teeth, dental implants for jaw, dental implants for teeth, dental implants for jaw, dental implants for teeth, dental implants for jaw">
     <meta name="author" content="Tanaka Munyoro">
@@ -20,7 +18,7 @@
               <a href="#" class="logo-link">
                 <img class="copy-of-untitled" src="assets/img/copy-of-untitled-design.png" alt="Logo" />
               </a>
-              <button class="hamburger-icon">
+              <button class="hamburger-icon" title="Menu"></button>>
                 <div></div>
                 <div></div>
                 <div></div>
@@ -61,8 +59,8 @@
                         <input type="text" placeholder="Enter your name">
                     </div>
                     <div class="form-group">
-                        <label>Specify Treatment</label>
-                        <select>
+                        <label for="service-select">Specify Treatment</label>
+                        <select id="service-select" name="service">
                             <option>Select Treatment</option>
                             <option>Initial Consultation</option>
                             <option>Deep Cleaning</option>
@@ -78,12 +76,12 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Flexible Date? (DD/MM/YY)</label>
-                        <input type="date">
+                        <label for="flexible-date">Flexible Date? (DD/MM/YY)</label>
+                        <input type="date" id="flexible-date" name="flexible-date">
                     </div>
                     <div class="form-group">
-                        <label>Message to Practice</label>
-                        <textarea placeholder="Enter your message" rows="3"></textarea>
+                        <label for="message">Message to Practice</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" rows="3"></textarea>
                     </div>
                     <button type="submit">Book Appointment</button>
                 </form>
@@ -92,13 +90,13 @@
     </main>
 
     <footer class="footer">
-        <img class="copy-of-untitled" src="assets/img/copy-of-untitled-design.png" />
+        <img class="copy-of-untitled" src="assets/img/copy-of-untitled-design.png" alt="Uthotho Implants Logo"/>
         <div class="social-media-links">
-            <a href="https://www.linkedin.com/in/siphesihle-mpungose-2baba8230/" target="_blank" rel="noopener noreferrer"><img class="img-2" src="assets/img/icons8-linkedin-24-1.png" /></a>
-            <a href="https://www.facebook.com/profile.php?id=61555718162272" target="_blank" rel="noopener noreferrer"><img class="img-2" src="assets/img/icons8-facebook-24-1.png" /></a>
-            <a href="https://www.instagram.com/drspmpungose/" target="_blank" rel="noopener noreferrer"><img class="img-2" src="assets/img/icons8-instagram-24-1.png" /></a>
-            <a href="https://wa.me/message/JR6RXIJVPTZXG1" target="_blank" rel="noopener noreferrer"><img class="img-2" src="assets/img/icons8-whatsapp-24-1.png" /></a>
-            <a href="https://www.tiktok.com/@uthotho_implants?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer"><img class="img-2" src="assets/img/icons8-tiktok-24-1-1.png" /></a>
+            <a href="https://www.linkedin.com/in/siphesihle-mpungose-2baba8230/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><img class="img-2" src="assets/img/icons8-linkedin-24-1.png"  alt="LinkedIn"/></a>
+            <a href="https://www.facebook.com/profile.php?id=61555718162272" target="_blank" rel="noopener noreferrer" title="Facebook"><img class="img-2" src="assets/img/icons8-facebook-24-1.png"  alt="Facebook"/></a>
+            <a href="https://www.instagram.com/drspmpungose/" target="_blank" rel="noopener noreferrer" title="Instagram"><img class="img-2" src="assets/img/icons8-instagram-24-1.png"  alt="Instagram"/></a>
+            <a href="https://wa.me/message/JR6RXIJVPTZXG1" target="_blank" rel="noopener noreferrer" title="WhatsApp"><img class="img-2" src="assets/img/icons8-whatsapp-24-1.png"  alt="WhatsApp"/></a>
+            <a href="https://www.tiktok.com/@uthotho_implants?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" title="TikTok"><img class="img-2" src="assets/img/icons8-tiktok-24-1-1.png"  alt="TikTok"/></a>
         </div>
         <div class="footer-buttons">
             <a href="index.html" class="text-wrapper-49">Home</a>
